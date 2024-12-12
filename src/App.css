@@ -1,0 +1,255 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+  background-color: #007bff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.header-title h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Navbar section */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+}
+
+/* Search bar */
+.search-bar {
+  width: 250px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #0056b3;
+}
+
+/* Add task card */
+.add-task-card {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 90%;
+  max-width: 550px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.add-task-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-card h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.task-input,
+.task-textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.task-input:focus,
+.task-textarea:focus {
+  border-color: #0056b3;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Task list container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Task list item */
+.task-list-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.task-status {
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-status.pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.task-status.completed {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.status-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.status-btn:active {
+  background-color: #1f6487;
+}
+
+
+/* Task actions buttons */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.status-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.status-btn:active {
+  background-color: #1f6487;
+}
+
+/* Task status styles */
+.pending {
+  color: red;
+}
+
+.completed {
+  color: green;
+}
+
+/* Task actions buttons */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.status-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.status-btn:active {
+  background-color: #1f6487;
+}
+
+/* Status select dropdown */
+.status-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
