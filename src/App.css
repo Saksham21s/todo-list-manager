@@ -184,32 +184,6 @@ body {
   background-color: #1f6487;
 }
 
-
-/* Task actions buttons */
-.task-actions {
-  display: flex;
-  gap: 10px;
-}
-
-.status-btn {
-  background-color: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.status-btn:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
-}
-
-.status-btn:active {
-  background-color: #1f6487;
-}
-
 /* Task status styles */
 .pending {
   color: red;
@@ -219,37 +193,89 @@ body {
   color: green;
 }
 
-/* Task actions buttons */
-.task-actions {
-  display: flex;
-  gap: 10px;
+/* Responsive Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Stack navbar elements */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar .search-bar {
+    width: 100%;
+  }
+
+  .header-title h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust task card and input sizes for smaller screens */
+  .add-task-card {
+    padding: 20px;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .task-input,
+  .task-textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+  }
+
+  .task-list {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .task-list-item {
+    padding: 15px;
+  }
+
+  .task-status {
+    font-size: 0.9rem;
+  }
 }
 
-.status-btn {
-  background-color: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
+@media only screen and (max-width: 480px) {
+  /* For very small screens like mobile phones */
+  .header {
+    padding: 10px;
+  }
 
-.status-btn:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
-}
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
 
-.status-btn:active {
-  background-color: #1f6487;
-}
+  .navbar .search-bar {
+    width: 100%;
+  }
 
-/* Status select dropdown */
-.status-select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  font-size: 16px;
-  cursor: pointer;
+  .add-task-card {
+    padding: 15px;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .task-input,
+  .task-textarea {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn {
+    padding: 10px;
+  }
+
+  .task-list-item {
+    padding: 10px;
+  }
+
+  .task-status {
+    font-size: 0.8rem;
+  }
 }
